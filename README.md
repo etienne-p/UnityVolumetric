@@ -11,7 +11,7 @@ This component lets you generate a ```Texture3D``` storing volumetric data from 
 To do so, it renders the mesh *slice by slice*, using a custom shader to isolate pixels
 which are *inside* the mesh.
 
-![alt text](readme/model_slice.png "Mesh Slicing")
+![alt text](Readme/model_slice.PNG "Mesh Slicing")
 
 Specifically, for each slice:
 - on the left, we render the mesh normals in a renderTexture
@@ -23,7 +23,7 @@ Component Inpector:
 - ```Slice Position``` normalized position of the "cut" within the volume, useful for preview, is animated form 0 to 1 when rendering the volume
 - ```Step``` a threshold applied to the dot product of a normal and the back direction vector to decide wether a pixel is in the volume, you typically want it to be slightly above 0 as a false positive is worse than a false negative
 
-![alt text](readme/slicer_inspector.png "Slicer Inspector")
+![alt text](Readme/slicer_inspector.PNG "Slicer Inspector")
 
 ## Renderer
 
@@ -33,7 +33,7 @@ It is possible to set:
 
 - the number of steps for raymarching,
 
-![alt text](readme/renderer_inspector.png "Renderer Inspector")
+![alt text](Readme/renderer_inspector.PNG "Renderer Inspector")
 
 
 - wether or not depth is taken in account 
@@ -41,8 +41,8 @@ It is possible to set:
 
 *Rendereding without depth, the object is overlayed on the scene*
 
-![alt text](readme/no_depth.png "volume rendered without depth")
+![alt text](Readme/no_depth.PNG "volume rendered without depth")
 
 *Rendereding with depth turned on, the volume blends with scene elements*
 
-![alt text](readme/with_depth.png "Volume rendered with depth")
+![alt text](Readme/with_depth.PNG "Volume rendered with depth")
