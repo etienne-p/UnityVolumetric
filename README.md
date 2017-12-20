@@ -39,10 +39,10 @@ It is possible to set:
 - wether or not depth is taken in account 
   (in this case at each step on the ray depth is tested against the scene depth read from the camera depthbuffer).
 
-*Rendereding without depth, the object is overlayed on the scene*
+*Rendering without depth, the object is overlayed on the scene*
 
 ![alt text](Readme/no_depth.PNG "volume rendered without depth")
 
-*Rendereding with depth turned on, the volume blends with scene elements*
+*Rendering with depth turned on, the volume blends with scene elements*
 
 ![alt text](Readme/with_depth.PNG "Volume rendered with depth")
